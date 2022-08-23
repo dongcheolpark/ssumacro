@@ -1,5 +1,5 @@
-import fetch from 'node-fetch'
-import "@/Common/env"
+import fetch from 'node-fetch';
+import "@/env";
 
 export const getApi = async () => {
 	let res = await fetch('https://smartid.ssu.ac.kr/Symtra_sso/smln_pcs.asp',{
