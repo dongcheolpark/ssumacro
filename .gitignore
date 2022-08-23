@@ -105,3 +105,6 @@ dist
 
 # Dotenv file
 .env
+
+# dist file
+dist
