@@ -12,8 +12,13 @@ getApi().then(async (res) => {
 	const assignment = await new getAssignment(res).runAllActivities(ids);
 	for(let item2 of assignment) {
 		for(let item of item2) {
-			if(item.completed == false && item.type == types.COMMONS && item.commons_content?.content_type == content_type.mp4)  {
+			if(item.completed == false && item.type == types.COMMONS
+				 && item.commons_content?.content_type == content_type.mp4
+				 //&& item.use_attendance == true
+				 )  { // 안들은 동영상 분리
+
 				console.log(item.title);
+
 			}
 		}
 	}
