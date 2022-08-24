@@ -17,7 +17,7 @@ getApi().then(async (res) => {
 				 //&& item.use_attendance == true
 				 )  { // 안들은 동영상 분리
 
-				console.log(item.title);
+				console.log(item.title + item.commons_content.content_id);
 
 			}
 		}
